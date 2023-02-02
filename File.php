@@ -40,7 +40,7 @@ class File
 
             file_put_contents($filename, $string, FILE_APPEND);
         }catch (Exception $exception){
-            echo 'Failed to put data in file: '. $exception->getMessage();
+            dump('Failed to put data in file: '. $exception->getMessage());
         }
     }
 }
